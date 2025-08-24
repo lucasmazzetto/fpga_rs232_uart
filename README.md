@@ -1,6 +1,6 @@
 # FPGA RS232 UART Loopback
 
-This repository contains a VHDL-based UART loopback system designed specifically for the Altera Cyclone IV Board V3.0, featuring the Cyclone IV FPGA EP4CE6E22C8. The project implements a buffered UART interface using an internal FIFO, where every byte received through the RS-232 line is stored and then retransmitted back to the sender.
+This repository contains a VHDL-based UART loopback system designed specifically for the **Altera Cyclone IV Board V3.0**, featuring the **Cyclone IV FPGA EP4CE6E22C8**. The project implements a buffered UART interface using an internal FIFO, where every byte received through the RS-232 line is stored and then retransmitted back to the sender.
 
 If you use a different development board or FPGA, some modifications and adjustments may be necessary to adapt the design to your hardware.
 
@@ -20,6 +20,7 @@ The [Altera Cyclone IV Board V3.0](https://github.com/lucasmazzetto/Altera-Cyclo
 
 Each transmitted byte uses a simple, standard UART frame consisting of 1 start bit (logic 0), 8 data bits sent least-significant bit first, and 1 stop bit (logic 1). This design does not use parity bits, making the protocol straightforward and suitable for basic loopback testing and simple serial communication.
 
+![uart](https://github.com/user-attachments/assets/22ee017a-797c-4e9c-915c-aca3b4139c60)
 
 ## Requirements
 
